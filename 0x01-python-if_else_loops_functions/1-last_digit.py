@@ -7,9 +7,11 @@ no = abs(number) % 10
 if number < 0:
     no = -no
 
+com = line = "Last digit of {} is {} and is {}"
+
 if no > 5:
-    print(f"Last digit of {number} is {no} and is is greater than 5")
-elif no == 0:
-    print(f"Last digit of {number} is {no} and is 0")
+    print(com.format(number, no, "greater than 5"))
+elif no < 6 and no != 0:
+    print(com.format(number, no, "less than 6 and not 0"))
 else:
-    print(f"Last digit of {number} is {no} and is less than 6 and not 0")
+    print("Last digit of {} is {} and is 0".format(number, no))
