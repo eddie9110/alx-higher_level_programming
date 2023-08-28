@@ -4,5 +4,5 @@ def safe_print_list(value):
     try:
         print("{:d}".format(value))
         return True
-    except TypeError:
+    except Exception:
         return False
