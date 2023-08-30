@@ -5,6 +5,13 @@ attribute.
 
 
 class Square:
-    def __init__(self, size):
 
+"""
+    A class named Square
+"""
+    def __init__(self, size):
+ """
+    Args:
+        size (int): size of square
+    """
         self.__size = size
