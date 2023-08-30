@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """
-    module defines Square class
+    module defines Square class with a private instance
+    attribute
 """
 
+
 class Square:
-    """ An class definition for a square. """
+    """ class definition for square. """
     def __init__(self, size=0):
-"""
+        """
         Args:
-            size (int): square length
+            size (int): length of the square.
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -18,5 +20,5 @@ class Square:
         self.__size = size
 
     def area(self):
-        """ Returns the area of the square """
+        """ Returns the square area. """
         return self.__size**2
