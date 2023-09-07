@@ -14,6 +14,12 @@ class Rectangle:
         """
         Initialising a rectangle class.
 
+        Args:
+            self : Arg
+            width : Arg
+                (default 0)
+            height : Arg
+                (default 0)
         """
         self.width = width
         self.height = height
@@ -28,6 +34,9 @@ class Rectangle:
         """
         Setter function for width.
 
+        Args:
+            self : Arg
+            value : Arg
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
