@@ -16,7 +16,6 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-       
 
     @property
     def width(self):
@@ -62,7 +61,7 @@ class Rectangle:
 
     def area(self):
         """
-        Calculates the area of a rectangle 
+        Calculates the area of a rectangle
 
         """
         return self.height * self.width

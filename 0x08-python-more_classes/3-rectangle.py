@@ -25,7 +25,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ 
+        """
         Setter function for width.
 
         """
