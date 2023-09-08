@@ -15,8 +15,7 @@ def text_indentation(text):
 
     inpt = ""
     delim_ = [".", "?", ":"]
-    n_txt = []
-    
+    n_txt = [] 
 
     for xter in text:
         inpt += xter
