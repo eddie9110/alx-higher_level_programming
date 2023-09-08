@@ -1,0 +1,81 @@
+=================================================
+Test cases for possible user inputs for addition
+==================================================
+
+
+importing module for testing
+=================================
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+tests
+====================
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing arguments
+
+>>> add_integer(0, 0)
+0
+>>> add_integer(1, 11)
+12
+>>> add_integer(2.0, 12.0)
+14
+>>> add_integer(2, -13)
+-11
+>>> add_integer(-5, 10)
+5
+>>> add_integer(3.1, 9.9)
+13
+>>> add_integer(3.9, -10.0)
+-7
+>>> add_integer(-4.9, 10.1)
+6
+>>> add_integer(-1.1, -10.1)
+-11
+
+>>> add_integer("World Hello", 8)
+Traceback (most recent call last):
+...
+TypeError: 1st arg must be an integer
+
+>>> add_integer(2, "Hello World")
+Traceback (most recent call last):
+...
+TypeError: 2nd arg must be an integer
+
+>>> add_integer("hello", "world")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(9.0, None)
+Traceback (most recent call last):
+...
+TypeError: 2nd input must be an integer
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(8, float('inf'))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+>>> add_integer(2, float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
