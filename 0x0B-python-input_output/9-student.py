@@ -19,7 +19,7 @@ class Student:
 
     def to_json(self):
         """
-        A Method that retrieves a dictionary 
+        A Method that retrieves a dictionary
         representation of a Student instance
         """
         return self.__dict__
