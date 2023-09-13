@@ -6,7 +6,8 @@ A module for the function class_to_json()
 
 def class_to_json(obj):
     """
-    A function that returns the turns the dictionary representation of a simple data structure
+    A function that returns the turns the 
+    dictionary representation of a simple data structure
     for JSON serialization of an object.
 
     Args:
